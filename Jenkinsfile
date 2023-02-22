@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('EB create'){
             steps {
-                 withAWS(credentials: 'aws-access-key', region: 'eu-west-1') {
+                 withAWS(credentials: 'aws-amazon', region: 'eu-west-1') {
                     dir("eb") {
                         sh 'eb create cmg-elastic'
                     }
