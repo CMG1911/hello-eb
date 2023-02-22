@@ -1,0 +1,6 @@
+version: "3.0"
+services:
+ web:
+   image: ghcr.io/cmg1911/hello-2048:latest
+   ports:
+     - "80:80"
